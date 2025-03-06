@@ -1,0 +1,38 @@
+{
+  "name": "sourcify-context-server",
+  "description": "A MPC server for sourcify.eth",
+  "author": "Yurii Kabannik <yurii.kabannik@gmail.com>",
+  "version": "0.1.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yura2100/sourcify-context-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yura2100/sourcify-context-server/issues"
+  },
+  "type": "module",
+  "bin": {
+    "sourcify-context-server": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && shx chmod +x dist/*.js",
+    "prepare": "npm run build",
+    "watch": "tsc --watch"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.6.1",
+    "@tanstack/query-core": "^5.67.1",
+    "abitype": "^1.0.8",
+    "viem": "^2.23.6"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@types/node": "^22.13.9",
+    "shx": "^0.3.4",
+    "typescript": "^5.8.2"
+  }
+}
