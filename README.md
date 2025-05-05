@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/yura2100-sourcify-context-server-badge.png)](https://mseep.ai/app/yura2100-sourcify-context-server)
+
 # sourcify-context-server MCP Server
 
 A Model Context Protocol server
